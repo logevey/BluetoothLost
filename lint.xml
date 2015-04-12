@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams">
+        <ignore path="src/com/doutech/bluetoothlost/adapter/ExistDeviceAdapter.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/doutech/bluetoothlost/AddDeviceActivity.java" />
+    </issue>
+</lint>

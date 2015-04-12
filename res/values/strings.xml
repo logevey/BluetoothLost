@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小豆芽</string>
+    <string name="action_settings">设置</string>
+    <string name="availbledevice">可用设备</string>
+    <string name="searchShotCut">搜索</string>
+
+    
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    	
+    <string name="pull_to_refresh">下拉启动拍照</string>
+	<string name="release_to_refresh">释放立即拍照</string>
+	<string name="refreshing">正在拍照…</string>
+	<string name="not_updated_yet">暂未拍照过</string>
+	<string name="updated_just_now">刚刚拍照</string>
+	<string name="time_error">时间有问题</string>
+</resources>

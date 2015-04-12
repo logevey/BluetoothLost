@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/set"
+        android:showAsAction="ifRoom"
+        android:title="设置"/>
+</menu>

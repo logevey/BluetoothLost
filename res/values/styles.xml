@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomTheme" parent="@android:style/Theme.Holo.Light">
+
+        <!-- 自定义的一些主题，主要是actionbar -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/MyActionBarTitleText</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+    </style>
+	<style name="color" parent="@android:style/TextAppearance.Small">
+	    <item name="android:textColor">#ffffff</item>
+	</style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+     <style name="AppTheme" parent="android:Theme.Light" />      
+    	<style name="AnimBottom" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+ </style>
+</resources>
+

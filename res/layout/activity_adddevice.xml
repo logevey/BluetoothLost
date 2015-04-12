@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aleadyAdd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circleangle_bg"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="图片"
+            android:textColor="#000000"
+            android:textColorLink="@android:color/black"
+            android:textSize="20dp" />
+
+        <com.doutech.bluetoothlost.view.CircleImageView
+            android:id="@+id/device_icon"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/icon1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circleangle_bg"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="名称"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:editable="true"
+             android:visibility="visible"
+            android:text="default"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="104dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/device_name"
+            android:ems="10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circleangle_bg"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="报警开关"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/detailalarmswitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:maxLength="100"
+            android:textColorLink="@android:color/holo_green_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circleangle_bg"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="报警距离"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:id="@+id/detaildistanceseekbar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:progress="60"
+            android:text="Switch" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/disattach"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circleangle_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="解除绑定"
+        android:textColor="#000000"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

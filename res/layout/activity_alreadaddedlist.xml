@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <com.doutech.bluetoothlost.view.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <com.doutech.bluetoothlost.view.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipeListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeBackView="@+id/id_back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/id_front"
+        swipe:swipeMode="left"
+        swipe:swipeOffsetLeft="200dip"
+        swipe:swipeOpenOnLongPress="false" />
+    </com.doutech.bluetoothlost.view.RefreshableView>
+     
+</LinearLayout>

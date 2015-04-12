@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+
+ <!--   <LinearLayout
+        android:id="@+id/id_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffcccccc"
+        android:gravity="center|right" >
+	 
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/delete"
+            android:textColor="#fff" >
+        </Button>
+      
+    </LinearLayout>
+-->   
+    <LinearLayout
+        android:id="@+id/id_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circleangle_bg"
+            android:padding="5dp" >
+
+            <com.doutech.bluetoothlost.view.CircleImageView
+                android:id="@+id/deviceicon"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right_arrow" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/deviceicon"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/devicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="钥匙"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/bindstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="已绑定"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

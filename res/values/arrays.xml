@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer-array name ="iconarray">
+    <item >@drawable/icon1</item>
+    <item >@drawable/icon2</item>
+    <item >@drawable/icon3</item>
+    <item >@drawable/icon4</item>
+    <item >@drawable/icon5</item>
+    <item >@drawable/icon6</item>
+    <item >@drawable/icon7</item>
+    <item >@drawable/icon8</item>
+    <item >@drawable/icon9</item>
+    </integer-array>
+</resources>

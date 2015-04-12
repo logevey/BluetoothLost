@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <com.doutech.bluetoothlost.view.CircleImageView 
+        android:src="@drawable/icon2"
+        android:id="@+id/devicephoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <com.doutech.bluetoothlost.view.CircleButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_call"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:src="@drawable/music"
+        app:cb_color="#000000" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:max="100"
+        android:progress="50"
+         />
+    <LinearLayout 
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+</LinearLayout>
